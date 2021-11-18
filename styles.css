@@ -17,7 +17,6 @@ body {
     justify-content: center;
     flex-direction: column;
     font-weight: lighter;
-    font-size: 2em;
     top: 0;
     padding-top: 50px;
 }
@@ -25,6 +24,7 @@ body {
 .header h1 {
     align-self: center;
     text-align: center;
+    font-size: 2em;
 }
 
 .homepage-image {
