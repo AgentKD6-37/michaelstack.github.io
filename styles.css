@@ -60,6 +60,11 @@ body {
     border-radius: 50%;
 }
 
+.caption {
+    font-size: 0.50em;
+    padding-left: 0.60in;
+}
+
 .affix {
     top: 0;
     width: 100%;
@@ -108,6 +113,12 @@ body {
     height: 500px;
     color: #fff;
     background-color: #009688;
+}
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 961px) {
