@@ -27,6 +27,12 @@ body {
     font-size: 2em;
 }
 
+.header p {
+    align-self: center;
+    text-align: center;
+    font-style: italic;
+}
+
 .homepage-image {
     display: block;
     margin-left: auto;
