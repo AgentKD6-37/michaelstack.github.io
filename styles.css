@@ -7,21 +7,27 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #333;
-    color: antiquewhite;
+    color: oldlace;
 }
 
 .header {
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 1em;
     font-weight: lighter;
     font-size: 2em;
     top: 0;
 }
 
+.header h1 {
+    align-self: center;
+    text-align: center;
+}
+
 .header p {
+    background-color: black;
     font-size: 0.5em;
     align-self: center;
     font-style: italic;
@@ -30,6 +36,7 @@ body {
 .navigation {
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 .navigation a {
@@ -39,12 +46,13 @@ body {
     border: 3px solid wheat;
     border-radius: 5%;
     text-decoration: none;
-    color: antiquewhite;
+    color: oldlace;
     align-self: center;
+    text-align: center;
 }
 
 .navigation a:hover {
-    background-color: antiquewhite;
+    background-color: oldlace;
     color: #333;
 }
 
@@ -56,6 +64,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.resume {
+    display: flex;
 }
 
 @media only screen and (max-width: 961px) {
@@ -74,6 +86,7 @@ body {
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 1em;
         font-weight: lighter;
@@ -85,13 +98,17 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .header h1 {
+        display: flex;
+        align-self: center;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .header {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 1em;
         font-weight: lighter;
         align-self: center;
@@ -102,5 +119,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .header h1 {
+        text-align: center;
     }
 }
