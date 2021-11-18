@@ -18,13 +18,13 @@ body {
     flex-direction: column;
     font-weight: lighter;
     top: 0;
-    padding-top: 50px;
+    padding-top: 15px;
 }
 
 .header h1 {
     align-self: center;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .header p {
