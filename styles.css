@@ -398,6 +398,8 @@ a:hover {
     gap: 0.75rem;
     padding: 0.95rem 2.25rem;
     border: 1px solid var(--gold);
+    outline: 1px solid var(--gold);
+    outline-offset: 3px;
     color: var(--ivory);
     font-family: var(--serif-display);
     font-size: 0.78rem;
@@ -474,8 +476,25 @@ section {
     position: absolute;
     inset: -12px;
     border: 1px solid var(--gold);
+    outline: 1px solid var(--gold);
+    outline-offset: 4px;
     pointer-events: none;
     z-index: -1;
+}
+
+.about__portrait::after {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    pointer-events: none;
+    background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>");
+    background-position: left -6px top -6px, right -6px top -6px, left -6px bottom -6px, right -6px bottom -6px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
 }
 
 .about__caption {
@@ -527,25 +546,44 @@ section {
 .service {
     padding: 2.25rem 1.75rem;
     background: var(--ink);
-    border: 1px solid rgba(184, 149, 79, 0.25);
+    border: 1px solid rgba(184, 149, 79, 0.35);
+    outline: 1px solid rgba(184, 149, 79, 0.35);
+    outline-offset: 4px;
     position: relative;
-    transition: border-color 250ms ease, transform 250ms ease;
+    transition: border-color 250ms ease, outline-color 250ms ease, transform 250ms ease;
 }
 
 .service:hover {
     border-color: var(--gold);
+    outline-color: var(--gold);
     transform: translateY(-3px);
 }
 
 .service::before {
     content: '';
     position: absolute;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    border: 1px solid rgba(184, 149, 79, 0.15);
+    inset: 0;
     pointer-events: none;
+    background-image:
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold));
+    background-position:
+        left 12px top 12px, left 12px top 12px,
+        right 12px top 12px, right 12px top 12px,
+        left 12px bottom 12px, left 12px bottom 12px,
+        right 12px bottom 12px, right 12px bottom 12px;
+    background-size:
+        18px 1px, 1px 18px,
+        18px 1px, 1px 18px,
+        18px 1px, 1px 18px,
+        18px 1px, 1px 18px;
+    background-repeat: no-repeat;
 }
 
 .service__mark {
@@ -671,6 +709,8 @@ section {
     gap: 0.65rem;
     padding: 0.9rem 2rem;
     border: 1px solid var(--gold);
+    outline: 1px solid var(--gold);
+    outline-offset: 3px;
     color: var(--ivory);
     font-family: var(--serif-display);
     font-size: 0.78rem;

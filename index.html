@@ -113,7 +113,7 @@ a:hover { color: var(--ivory); }
 .hero__motto { font-family: var(--serif-body); font-style: italic; font-size: clamp(1.25rem, 2.4vw, 1.7rem); color: var(--gold-bright); letter-spacing: 0.12em; margin-bottom: 0.5rem; }
 .hero__motto-translation { font-family: var(--serif-body); font-size: 0.95rem; color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 2.25rem; }
 .hero__role { font-family: var(--serif-display); font-size: 0.85rem; letter-spacing: 0.45em; text-transform: uppercase; color: var(--ivory-dim); margin-bottom: 2.5rem; }
-.hero__cta { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 2.25rem; border: 1px solid var(--gold); color: var(--ivory); font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; background: transparent; transition: all 250ms ease; cursor: pointer; }
+.hero__cta { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 2.25rem; border: 1px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 3px; color: var(--ivory); font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; background: transparent; transition: all 250ms ease; cursor: pointer; }
 .hero__cta:hover { background: var(--gold); color: var(--ink); }
 .hero__scroll { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); font-family: var(--serif-display); font-size: 0.7rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold-dim); }
 
@@ -124,7 +124,21 @@ section { padding: var(--section-y) var(--gutter); }
 .about__grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .about__portrait { position: relative; }
 .about__portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; border: 1px solid var(--gold-dim); box-shadow: var(--shadow-deep); filter: sepia(0.12) contrast(1.02); }
-.about__portrait::before { content: ''; position: absolute; inset: -12px; border: 1px solid var(--gold); pointer-events: none; z-index: -1; }
+.about__portrait::before { content: ''; position: absolute; inset: -12px; border: 1px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 4px; pointer-events: none; z-index: -1; }
+.about__portrait::after {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    pointer-events: none;
+    background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='%23b8954f'><rect x='3' y='3' width='6' height='6' transform='rotate(45 6 6)'/></svg>");
+    background-position: left -6px top -6px, right -6px top -6px, left -6px bottom -6px, right -6px bottom -6px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+}
 .about__caption { font-style: italic; font-size: 0.9rem; color: var(--muted); margin-top: 1rem; text-align: center; }
 .about__body p { margin-bottom: 1.25rem; font-size: 1.2rem; line-height: 1.8; color: var(--ivory); }
 .about__body p:first-of-type::first-letter { font-family: var(--serif-display); font-size: 4.5rem; color: var(--gold); float: left; line-height: 1; padding: 0.4rem 0.75rem 0 0; font-weight: 500; }
@@ -135,9 +149,30 @@ section { padding: var(--section-y) var(--gutter); }
 }
 
 .services__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-.service { padding: 2.25rem 1.75rem; background: var(--ink); border: 1px solid rgba(184, 149, 79, 0.25); position: relative; transition: border-color 250ms ease, transform 250ms ease; }
-.service:hover { border-color: var(--gold); transform: translateY(-3px); }
-.service::before { content: ''; position: absolute; top: 12px; left: 12px; right: 12px; bottom: 12px; border: 1px solid rgba(184, 149, 79, 0.15); pointer-events: none; }
+.service { padding: 2.25rem 1.75rem; background: var(--ink); border: 1px solid rgba(184, 149, 79, 0.35); outline: 1px solid rgba(184, 149, 79, 0.35); outline-offset: 4px; position: relative; transition: border-color 250ms ease, outline-color 250ms ease, transform 250ms ease; }
+.service:hover { border-color: var(--gold); outline-color: var(--gold); transform: translateY(-3px); }
+.service::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold)),
+        linear-gradient(var(--gold), var(--gold));
+    background-position:
+        left 12px top 12px, left 12px top 12px,
+        right 12px top 12px, right 12px top 12px,
+        left 12px bottom 12px, left 12px bottom 12px,
+        right 12px bottom 12px, right 12px bottom 12px;
+    background-size: 18px 1px, 1px 18px, 18px 1px, 1px 18px, 18px 1px, 1px 18px, 18px 1px, 1px 18px;
+    background-repeat: no-repeat;
+}
 .service__mark { font-family: var(--serif-display); font-size: 1.1rem; color: var(--gold); letter-spacing: 0.25em; margin-bottom: 1rem; }
 .service__title { font-family: var(--serif-display); font-size: 1.05rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ivory); margin-bottom: 1rem; font-weight: 500; }
 .service__body { font-size: 1.05rem; line-height: 1.65; color: var(--ivory-dim); }
@@ -158,7 +193,7 @@ section { padding: var(--section-y) var(--gutter); }
 
 .contact__lede { text-align: center; max-width: 620px; margin: 0 auto 3rem; font-size: 1.2rem; color: var(--ivory-dim); line-height: 1.75; }
 .contact__actions { display: flex; gap: 1rem; justify-content: center; margin-bottom: 4rem; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.9rem 2rem; border: 1px solid var(--gold); color: var(--ivory); font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; transition: all 250ms ease; cursor: pointer; background: transparent; }
+.btn { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.9rem 2rem; border: 1px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 3px; color: var(--ivory); font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; transition: all 250ms ease; cursor: pointer; background: transparent; }
 .btn:hover { background: var(--gold); color: var(--ink); }
 .btn--primary { background: var(--gold); color: var(--ink); }
 .btn--primary:hover { background: var(--gold-bright); color: var(--ink); }
@@ -346,35 +381,7 @@ section { padding: var(--section-y) var(--gutter); }
                     <div class="rule"><div class="rule__diamond"></div></div>
                 </div>
 
-                <ol class="work__list reveal" style="list-style:none;">
-                    <!-- Replace these placeholders with real projects. Keep the structure. -->
-                    <li class="work-item">
-                        <span class="work-item__num">i.</span>
-                        <div>
-                            <h3 class="work-item__title">Project Title</h3>
-                            <p class="work-item__desc">A short, dignified description of what was built and what it accomplished.</p>
-                        </div>
-                        <a class="work-item__link" href="#">View →</a>
-                    </li>
-
-                    <li class="work-item">
-                        <span class="work-item__num">ii.</span>
-                        <div>
-                            <h3 class="work-item__title">Project Title</h3>
-                            <p class="work-item__desc">A short, dignified description of what was built and what it accomplished.</p>
-                        </div>
-                        <a class="work-item__link" href="#">View →</a>
-                    </li>
-
-                    <li class="work-item">
-                        <span class="work-item__num">iii.</span>
-                        <div>
-                            <h3 class="work-item__title">Project Title</h3>
-                            <p class="work-item__desc">A short, dignified description of what was built and what it accomplished.</p>
-                        </div>
-                        <a class="work-item__link" href="#">View →</a>
-                    </li>
-                </ol>
+                <ol class="work__list reveal" id="workList"></ol>
 
                 <div class="work__cta">
                     <a class="btn" href="https://github.com/AgentKD6-37?tab=projects" target="_blank" rel="noopener">The Full Library on GitHub</a>
@@ -475,6 +482,44 @@ section { padding: var(--section-y) var(--gutter); }
     </footer>
 
     <script>
+        // === Selected Work data ===
+        // To add a project, append an object to this array. Roman numeral
+        // and link styling are generated automatically.
+        const works = [
+            {
+                title: "Learn With Lena Lee",
+                desc: "A marketing site and inquiry pipeline for a credentialed Virginia teacher's private tutoring practice in Fairfax County. Built to convey expertise without effort — measured copy and multilingual intake for the families who need it.",
+                href: "https://learnwithlenalee.com",
+                linkLabel: "Visit"
+            }
+        ];
+
+        (function renderWorks() {
+            const list = document.getElementById('workList');
+            if (!list) return;
+            if (!works.length) { list.style.display = 'none'; return; }
+
+            const toRoman = (n) => {
+                const map = [[10,'x'],[9,'ix'],[5,'v'],[4,'iv'],[1,'i']];
+                let r = '';
+                for (const [v, s] of map) while (n >= v) { r += s; n -= v; }
+                return r;
+            };
+            const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[c]));
+
+            list.innerHTML = works.map((w, i) => {
+                const numeral = toRoman(i + 1) + '.';
+                const isExternal = w.href && /^https?:/i.test(w.href);
+                const linkAttrs = isExternal ? ' target="_blank" rel="noopener"' : '';
+                const linkHtml = w.href
+                    ? `<a class="work-item__link" href="${w.href}"${linkAttrs}>${escapeHtml(w.linkLabel || 'View')} →</a>`
+                    : '';
+                return `<li class="work-item"><span class="work-item__num">${numeral}</span><div><h3 class="work-item__title">${escapeHtml(w.title)}</h3><p class="work-item__desc">${escapeHtml(w.desc)}</p></div>${linkHtml}</li>`;
+            }).join('');
+        })();
+
         // Mobile nav toggle
         const nav = document.getElementById('nav');
         const toggle = document.getElementById('navToggle');
