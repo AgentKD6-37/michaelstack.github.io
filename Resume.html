@@ -14,86 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-    --ink: #0a0e1a;
-    --ink-2: #131826;
-    --navy-deep: #0f1a2e;
-    --gold: #b8954f;
-    --gold-bright: #d4b36a;
-    --gold-dim: #8a6f3a;
-    --ivory: #faf6ec;
-    --ivory-dim: #d8d2c2;
-    --muted: #948b7a;
-    --serif-display: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
-    --serif-body: 'Cormorant Garamond', Garamond, 'Times New Roman', serif;
-    --max-w: 1100px;
-    --gutter: clamp(1.25rem, 4vw, 3rem);
-    --section-y: clamp(4rem, 9vw, 7rem);
-    --rule: 1px solid rgba(184, 149, 79, 0.35);
-    --rule-strong: 1px solid rgba(184, 149, 79, 0.7);
-    --shadow-deep: 0 20px 60px rgba(0, 0, 0, 0.55);
-}
-
-html { scroll-behavior: smooth; }
-body { font-family: 'Cormorant Garamond', Garamond, 'Times New Roman', serif; font-size: 1.15rem; line-height: 1.7; color: #faf6ec; background: #0a0e1a; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-img { max-width: 100%; display: block; }
-a { color: var(--gold-bright); text-decoration: none; transition: color 200ms ease; }
-a:hover { color: var(--ivory); }
-::selection { background: var(--gold); color: var(--ink); }
-
-.eyebrow { font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
-.section-title { font-family: var(--serif-display); font-size: clamp(1.75rem, 3.5vw, 2.6rem); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ivory); font-weight: 500; margin-top: 0.5rem; }
-.rule { display: flex; align-items: center; gap: 1rem; margin: 1.5rem auto 2.5rem; max-width: 240px; color: var(--gold); }
-.rule::before, .rule::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold) 50%, transparent); }
-.rule__diamond { width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
-.section-header { text-align: center; margin-bottom: 3.5rem; }
-.section-inner { max-width: var(--max-w); margin: 0 auto; }
-
-.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10, 14, 26, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: var(--rule); }
-.nav__inner { max-width: var(--max-w); margin: 0 auto; padding: 1rem var(--gutter); display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.nav__brand { display: flex; align-items: center; gap: 0.75rem; font-family: var(--serif-display); font-size: 0.95rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ivory); }
-.nav__brand-mark { width: 28px; height: 28px; object-fit: contain; mix-blend-mode: lighten; }
-.footer__crest { mix-blend-mode: lighten; }
-.nav__list { display: flex; gap: 2rem; list-style: none; }
-.nav__list a { font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ivory-dim); position: relative; padding: 0.25rem 0; }
-.nav__list a:hover { color: var(--gold-bright); }
-.nav__social { display: flex; gap: 1rem; align-items: center; }
-.nav__social a { color: var(--ivory-dim); display: inline-flex; }
-.nav__social a:hover { color: var(--gold-bright); }
-.nav__toggle { display: none; background: none; border: var(--rule); color: var(--ivory); width: 42px; height: 42px; cursor: pointer; align-items: center; justify-content: center; }
-.nav__toggle span, .nav__toggle span::before, .nav__toggle span::after { display: block; width: 18px; height: 1px; background: var(--gold); position: relative; }
-.nav__toggle span::before, .nav__toggle span::after { content: ''; position: absolute; left: 0; }
-.nav__toggle span::before { top: -6px; }
-.nav__toggle span::after { top: 6px; }
-
-@media (max-width: 820px) {
-    .nav__toggle { display: inline-flex; margin-left: auto; }
-    .nav__list, .nav__social { display: none; }
-    .nav__inner > nav { display: contents; }
-    .nav.is-open .nav__list { display: flex; flex-direction: column; gap: 1.25rem; position: absolute; top: 100%; left: 0; right: 0; background: var(--ink-2); padding: 2rem var(--gutter); border-bottom: var(--rule); }
-}
-
-.btn { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.9rem 2rem; border: 1px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 3px; color: var(--ivory); font-family: var(--serif-display); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; transition: all 250ms ease; cursor: pointer; background: transparent; }
-.btn:hover { background: var(--gold); color: var(--ink); }
-
-.resume-wrap { padding: 8rem var(--gutter) var(--section-y); }
-.resume-wrap .section-inner { max-width: 1000px; }
-.resume__frame { border: 1px solid var(--gold-dim); padding: 12px; background: var(--ink-2); box-shadow: var(--shadow-deep); margin-top: 2rem; }
-.resume__frame iframe { width: 100%; height: 85vh; border: 0; display: block; background: var(--ivory); }
-.resume__download { text-align: center; margin-top: 2rem; }
-
-.footer { padding: 4rem var(--gutter) 3rem; background: var(--navy-deep); border-top: var(--rule-strong); text-align: center; }
-.footer__crest { width: 90px; margin: 0 auto 1.25rem; opacity: 0.85; }
-.footer__motto { font-family: var(--serif-display); font-size: 0.95rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
-.footer__motto-sub { font-style: italic; color: var(--ivory-dim); font-size: 0.95rem; margin-bottom: 2rem; }
-.footer__copy { font-size: 0.85rem; color: var(--muted); letter-spacing: 0.05em; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="nav" id="nav">
         <div class="nav__inner">
@@ -102,16 +27,16 @@ a:hover { color: var(--ivory); }
                 <span>M.J. Stack</span>
             </a>
 
-            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNavigation" id="navToggle">
                 <span></span>
             </button>
 
-            <nav>
-                <ul class="nav__list">
-                    <li><a href="index.html#about">Biography</a></li>
+            <nav aria-label="Main navigation">
+                <ul class="nav__list" id="primaryNavigation">
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#work">Work</a></li>
-                    <li><a href="Resume.html">Résumé</a></li>
+                    <li><a href="Resume.html" aria-current="page">Résumé</a></li>
                     <li><a href="index.html#contact">Inquiries</a></li>
                 </ul>
             </nav>
@@ -131,12 +56,12 @@ a:hover { color: var(--ivory); }
         </div>
     </header>
 
-    <main class="resume-wrap">
+    <main class="resume-wrap" id="main-content">
         <div class="section-inner">
             <div class="section-header">
                 <span class="eyebrow">Curriculum Vitae</span>
                 <h1 class="section-title">Résumé</h1>
-                <div class="rule"><div class="rule__diamond"></div></div>
+                <div class="rule" aria-hidden="true"></div>
             </div>
 
             <div class="resume__frame">
@@ -165,6 +90,13 @@ a:hover { color: var(--ivory); }
                 toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
             });
         }
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+                nav.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.focus();
+            }
+        });
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>

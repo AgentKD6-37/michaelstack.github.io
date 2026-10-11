@@ -1,0 +1,8 @@
+Created with the built-in image_gen tool.
+Reference: assets/crest-gold.png
+
+Initial prompt:
+Use case: style-transfer. Asset type: transparent PNG wax seal for Michael John Stack's personal website correspondence form. Input image 1 is the edit target and exact heraldic design reference. Transform this existing gold-on-black family crest into the stamped relief on a realistic deep maroon wax seal, viewed straight down. Preserve the reference's heraldic arrangement exactly: shield with rampant lion and fleurs-de-lis, crown, arm holding a sword above, and ribbon below bearing the exact motto 'VIRTUTE ET VALOR'. The crest should be impressed into the wax as crisp sculpted shallow relief, entirely the same maroon wax material, highlights and shadows revealing it, no gold ink or gold metal. The seal is a single handmade roughly circular disk of sealing wax with a softly irregular pooled outer rim, subtle small edge imperfections and warm upper-left light. Deep burgundy/maroon (#582438 family), rich dimensional wax, restrained satin sheen, not plastic. Fill about 90 percent of the square canvas with the seal so the crest remains legible at a 112-pixel display size. Completely transparent background outside the wax; no paper, desk, stamp tool, props, rectangular backdrop, extra initials or new text. Isolate the full object with all edges visible. Keep the crest identity, motif count and layout faithful to the supplied original.
+
+Correction prompt:
+undefined

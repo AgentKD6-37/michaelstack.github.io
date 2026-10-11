@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" fill="none">
+  <title>Victorian acanthus corner</title>
+  <desc>An upper-left ornamental corner with curling leaves, a floral rosette, and fine frame rules. Rotate or mirror for other corners.</desc>
+  <defs>
+    <g id="arm" stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M37 37C68 14 97 16 114 38C129 58 145 61 167 47C181 38 198 37 213 40" stroke-width="1.15"/>
+      <path d="M46 32C69 34 74 50 66 59C60 66 49 61 53 54C55 50 59 53 58 55" stroke-width="1.1"/>
+      <path d="M70 24C87 11 101 15 108 26C97 22 94 35 82 31C85 38 82 47 75 48C79 40 68 33 70 24Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M78 25C86 25 92 24 99 22" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+      <path d="M108 32C126 24 142 29 144 42C136 36 132 46 123 42C127 50 139 52 144 49C137 63 122 57 117 47" fill="#b69256" stroke-width=".5"/>
+      <path d="M151 54C160 61 180 62 187 49C178 54 172 45 164 50C170 41 169 34 164 30C165 40 153 42 151 54Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M160 52C168 54 174 53 180 52" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+      <path d="M182 40C188 25 202 25 207 30C213 36 205 40 202 35" stroke-width=".85"/>
+      <path d="M94 18C112 8 132 11 145 20C157 28 165 22 162 16C159 10 150 13 153 18" stroke-width=".8"/>
+      <path d="M55 13H178M188 13H212" stroke-width=".65"/>
+      <circle cx="182.5" cy="13" r="1.15" fill="#b69256" stroke="none"/>
+      <path d="M18 18H42C45 18 47 15 45 12C42 9 38 12 40 14" stroke-width=".75"/>
+    </g>
+  </defs>
+  <use href="#arm"/>
+  <use href="#arm" transform="matrix(0 1 1 0 0 0)"/>
+  <g stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 38C59 47 65 67 81 72C94 76 103 67 98 59C94 52 84 57 89 63M38 38C47 59 67 65 72 81C76 94 67 103 59 98C52 94 57 84 63 89" stroke-width=".9"/>
+    <path d="M45 45C56 35 63 41 62 47C68 46 73 52 65 61C71 69 65 77 58 72C51 81 45 74 46 67C36 69 32 61 40 54C34 48 37 42 45 45Z" fill="#b69256" stroke-width=".7"/>
+    <path d="M46 49C54 46 63 50 62 58C61 65 54 68 49 62C45 58 48 52 53 53C58 53 57 59 54 58" stroke="#59442b" stroke-width="1" opacity=".5"/>
+    <path d="M72 72C89 75 98 89 96 102C92 96 82 101 81 90C81 99 76 105 70 102C77 96 69 83 72 72Z" fill="#b69256" stroke-width=".5"/>
+    <path d="M76 78C80 83 85 87 90 92" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+    <path d="M100 100C103 112 112 121 124 121C118 113 112 104 100 100Z" fill="#b69256" stroke-width=".5"/>
+    <path d="M105 105L117 117" stroke="#59442b" stroke-width=".7" opacity=".4"/>
+    <path d="M22 22C29 22 32 29 38 38C29 32 22 29 22 22Z" fill="#b69256" stroke-width=".5"/>
+    <circle cx="15" cy="15" r="2.2" fill="#b69256" stroke="none"/>
+    <circle cx="129" cy="129" r="1.5" fill="#b69256" stroke="none"/>
+  </g>
+</svg>

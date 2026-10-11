@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="400" viewBox="0 0 320 400" fill="none">
+  <title>Victorian botanical damask</title>
+  <desc>A seamless staggered pattern of curling acanthus, bellflowers, and fine botanical stems in antique brass.</desc>
+  <defs>
+    <g id="half" stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 108C-9 71-34 64-51 46C-78 18-71-20-47-30C-26-39-16-22-26-11C-34-3-47-11-40-18" stroke-width="1.2"/>
+      <path d="M-49 43C-30 39-22 23-27 10C-30 22-43 27-49 24C-41 18-41 6-48 0C-47 16-59 17-63 10C-67 25-60 36-49 43Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-47 33C-48 26-49 17-47 9M-39 30C-39 22-34 18-30 16" stroke="#59442b" stroke-width=".7" opacity=".4"/>
+      <path d="M-27 75C-24 58-31 50-41 52C-36 57-41 63-36 69C-46 65-57 68-59 76C-50 72-45 82-36 82C-27 82-22 76-27 75Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-61 14C-82 5-88-19-78-32C-73-38-65-37-65-31C-65-24-75-23-74-29" stroke-width=".9"/>
+      <path d="M-77-7C-92-14-98-27-92-38C-90-27-78-30-76-18C-74-25-69-29-65-28C-67-18-70-11-77-7Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-47-30C-49-49-40-70-24-77C-9-84-12-101-20-106" stroke-width="1"/>
+      <path d="M-41-56C-58-59-60-71-55-80C-52-69-42-72-39-64C-37-75-27-78-24-74C-27-64-31-58-41-56Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-23-82C-36-88-38-101-30-109C-31-100-20-98-23-82Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-5 26C-18 11-14-3-8-10C-18-20-13-35 0-46" stroke-width=".9"/>
+      <path d="M-9-13C-24-15-31-26-28-36C-24-27-13-30-9-13Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-12 16C-24 15-31 5-28-3C-23 6-16 2-12 16Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-2 71C-8 56-20 49-20 35C-20 23-9 22-6 29C-15 25-16 34-9 39C-1 45 0 52-2 71Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M-69 53C-78 60-83 69-81 80M-77 64C-88 59-93 64-93 70C-87 65-85 74-79 72M-81 78C-75 75-69 81-70 87C-75 83-80 87-81 92" stroke-width=".7" opacity=".75"/>
+    </g>
+    <g id="sprig">
+      <use href="#half"/>
+      <use href="#half" transform="scale(-1 1)"/>
+      <g stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0-133C-4-122-15-118-13-108C-11-98-3-92 0-80C3-92 11-98 13-108C15-118 4-122 0-133Z" fill="#b69256" stroke-width=".5"/>
+        <path d="M0-120V-91" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+        <path d="M0-80V-47M0 71V127" stroke-width="1.1"/>
+        <path d="M0-55C-11-62-18-57-19-48C-18-40-10-34 0-24C10-34 18-40 19-48C18-57 11-62 0-55Z" fill="#b69256" stroke-width=".5"/>
+        <path d="M0-49V-31M-12-49C-10-43-6-40-4-38M12-49C10-43 6-40 4-38" stroke="#59442b" stroke-width=".7" opacity=".4"/>
+        <path d="M0 94C-12 91-18 98-13 103C-9 107-4 104 0 99C4 104 9 107 13 103C18 98 12 91 0 94Z" fill="#b69256" stroke-width=".5"/>
+        <path d="M0 114C-5 118-5 124 0 129C5 124 5 118 0 114Z" fill="#b69256" stroke-width=".5"/>
+        <circle cy="-70" r="2.1" fill="#b69256" stroke="none"/>
+        <circle cy="-2" r="2.1" fill="#b69256" stroke="none"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#sprig" x="160" y="200"/>
+  <use href="#sprig" x="0" y="0"/>
+  <use href="#sprig" x="320" y="0"/>
+  <use href="#sprig" x="0" y="400"/>
+  <use href="#sprig" x="320" y="400"/>
+</svg>

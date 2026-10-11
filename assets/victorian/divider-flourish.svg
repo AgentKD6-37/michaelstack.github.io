@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="110" viewBox="0 0 820 110" fill="none">
+  <title>Antique brass botanical flourish</title>
+  <desc>Symmetric curved acanthus branches with a central floral finial.</desc>
+  <defs>
+    <g id="branch" stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M397 64C360 43 328 47 306 61C280 78 257 72 238 62C204 43 183 45 151 61C121 76 87 74 56 64C43 60 31 60 20 65" stroke-width="1.15"/>
+      <path d="M389 60C372 36 348 23 325 27C299 31 293 49 302 55C313 63 325 51 319 43C315 38 310 42 311 46" stroke-width="1.2"/>
+      <path d="M355 33C343 19 323 13 306 20C318 20 319 29 331 30C319 35 322 43 329 44C333 35 345 40 355 33Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M353 66C342 79 331 83 315 78C322 74 315 65 304 69C320 57 334 57 353 66Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M324 69C335 66 344 66 349 66" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+      <path d="M281 70C274 80 261 88 244 83C253 80 252 71 261 69C250 67 247 58 252 53C257 63 269 60 281 70Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M233 59C220 42 216 22 196 21C182 20 175 33 184 39C191 44 198 38 194 32" stroke-width="1"/>
+      <path d="M218 40C205 34 200 44 203 50C189 43 178 47 175 55C191 51 202 63 218 56C224 53 221 46 218 40Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M201 52C208 50 213 50 219 52" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+      <path d="M171 55C154 35 131 32 113 44C103 51 111 62 117 56C120 53 117 48 114 51" stroke-width=".95"/>
+      <path d="M152 41C146 25 132 25 120 30C130 30 129 41 139 43C133 46 133 52 137 56C140 46 150 49 152 41Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M154 61C144 76 123 87 106 82C116 79 117 69 128 68C116 67 114 61 116 57C125 65 140 55 154 61Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M96 71C84 58 76 45 64 48C55 51 58 61 64 58C67 57 66 53 63 54" stroke-width=".85"/>
+      <path d="M83 68C68 67 63 78 51 74C60 69 55 62 62 61C51 59 48 52 49 46C53 56 65 51 69 61" fill="#b69256" stroke-width=".5"/>
+      <path d="M56 65C43 71 34 73 24 71" stroke-width=".7"/>
+      <path d="M23 65C14 59 8 60 3 64C11 63 13 69 23 65Z" fill="#b69256" stroke-width=".5"/>
+      <path d="M370 69C361 85 344 95 320 91M302 91H187M173 91H152M138 91H130" stroke-width=".65" opacity=".65"/>
+      <circle cx="120" cy="91" r="1.4" fill="#b69256" stroke="none"/>
+      <circle cx="278" cy="39" r="1.6" fill="#b69256" stroke="none"/>
+    </g>
+  </defs>
+  <use href="#branch"/>
+  <use href="#branch" transform="translate(820 0) scale(-1 1)"/>
+  <g stroke="#b69256" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M410 9C405 23 391 29 391 42C391 53 402 57 410 69C418 57 429 53 429 42C429 29 415 23 410 9Z" stroke-width="1.25"/>
+    <path d="M410 19C408 30 400 35 400 43C400 51 406 55 410 61C414 55 420 51 420 43C420 35 412 30 410 19Z" fill="#b69256" stroke-width=".6"/>
+    <path d="M410 31V54" stroke="#59442b" stroke-width=".8" opacity=".4"/>
+    <path d="M406 68C394 52 381 51 377 60C372 72 388 85 400 80C389 77 389 67 394 67C399 67 404 72 407 78M414 68C426 52 439 51 443 60C448 72 432 85 420 80C431 77 431 67 426 67C421 67 416 72 413 78" stroke-width="1"/>
+    <path d="M410 74C404 80 404 88 410 95C416 88 416 80 410 74Z" fill="#b69256" stroke-width=".6"/>
+    <circle cx="410" cy="102" r="2.1" fill="#b69256" stroke="none"/>
+  </g>
+</svg>
